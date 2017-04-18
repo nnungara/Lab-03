@@ -1,0 +1,131 @@
+Last login: Tue Apr 18 12:25:09 on ttys000
+grc-kenya:~ nnungara$ cd desktop
+grc-kenya:desktop nnungara$ cd 338_03_L03_nnungara
+grc-kenya:338_03_L03_nnungara nnungara$ git init
+Initialized empty Git repository in /Users/nnungara/Desktop/338_03_L03_nnungara/.git/
+grc-kenya:338_03_L03_nnungara nnungara$ echo "# Lab-03" >> README.md
+grc-kenya:338_03_L03_nnungara nnungara$ git init
+Reinitialized existing Git repository in /Users/nnungara/Desktop/338_03_L03_nnungara/.git/
+grc-kenya:338_03_L03_nnungara nnungara$ git add README.md
+grc-kenya:338_03_L03_nnungara nnungara$ git commit -m "first commit"
+[master (root-commit) 111cf00] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+grc-kenya:338_03_L03_nnungara nnungara$ git remote add origin https://github.com/nnungara/Lab-03.git
+grc-kenya:338_03_L03_nnungara nnungara$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 223 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/nnungara/Lab-03.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+grc-kenya:338_03_L03_nnungara nnungara$ git init
+Reinitialized existing Git repository in /Users/nnungara/Desktop/338_03_L03_nnungara/.git/
+grc-kenya:338_03_L03_nnungara nnungara$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+grc-kenya:338_03_L03_nnungara nnungara$ git add -A
+grc-kenya:338_03_L03_nnungara nnungara$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .DS_Store
+	new file:   index.html
+
+grc-kenya:338_03_L03_nnungara nnungara$ git commit -m "Add files"
+[master 15095a7] Add files
+ 2 files changed, 12 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 index.html
+grc-kenya:338_03_L03_nnungara nnungara$ git remote add origin https://github.com/nnungara/Lab-03.git
+fatal: remote origin already exists.
+grc-kenya:338_03_L03_nnungara nnungara$ git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 949 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/nnungara/Lab-03.git
+   111cf00..15095a7  master -> master
+Branch master set up to track remote branch master from origin.
+grc-kenya:338_03_L03_nnungara nnungara$ git add -A
+grc-kenya:338_03_L03_nnungara nnungara$ git commit -m "Add picture to images"
+[master bb0ddc5] Add picture to images
+ 3 files changed, 5 insertions(+), 2 deletions(-)
+ create mode 100755 images/blackgoose.png
+grc-kenya:338_03_L03_nnungara nnungara$ git push
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 9.17 KiB | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nnungara/Lab-03.git
+   15095a7..bb0ddc5  master -> master
+grc-kenya:338_03_L03_nnungara nnungara$ git add -A
+grc-kenya:338_03_L03_nnungara nnungara$ git add -A
+grc-kenya:338_03_L03_nnungara nnungara$ git commit -m "Added image and link"
+[master 09a816a] Added image and link
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+grc-kenya:338_03_L03_nnungara nnungara$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 783 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nnungara/Lab-03.git
+   bb0ddc5..09a816a  master -> master
+grc-kenya:338_03_L03_nnungara nnungara$ git add -A
+grc-kenya:338_03_L03_nnungara nnungara$ git commit -m "Made spelling check"
+[master 9186e09] Made spelling check
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+grc-kenya:338_03_L03_nnungara nnungara$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/nnungara/Lab-03.git
+   09a816a..9186e09  master -> master
+grc-kenya:338_03_L03_nnungara nnungara$ git log
+commit 9186e095d7f0ae296c0ba8c493610c7cad4b1ea9
+Author: Nathan Nungaray <nnungara@calpoly.edu>
+Date:   Tue Apr 18 13:48:47 2017 -0700
+
+    Made spelling check
+
+commit 09a816a92f86bc2dd5fbf3a008c047d35bec69a9
+Author: Nathan Nungaray <nnungara@calpoly.edu>
+Date:   Tue Apr 18 13:44:02 2017 -0700
+
+    Added image and link
+
+commit bb0ddc51a77175913347424b0ac14db2bee17834
+Author: Nathan Nungaray <nnungara@calpoly.edu>
+Date:   Tue Apr 18 13:21:28 2017 -0700
+
+    Add picture to images
+
+commit 15095a7a169384b3ba274bba8993171984b6d3b0
+Author: Nathan Nungaray <nnungara@calpoly.edu>
+Date:   Tue Apr 18 13:13:24 2017 -0700
+
+    Add files
+
+commit 111cf001ede692dca5c94be218951090c478251b
+Author: Nathan Nungaray <nnungara@calpoly.edu>
+Date:   Tue Apr 18 13:04:53 2017 -0700
+
+    first commit
+grc-kenya:338_03_L03_nnungara nnungara$ 
